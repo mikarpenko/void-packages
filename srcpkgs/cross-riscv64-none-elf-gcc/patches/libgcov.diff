@@ -1,0 +1,10 @@
+--- ./libgcc/libgcov.h	2024-02-09 22:02:45.421363238 +0300
++++ ./libgcc/libgcov.h	2024-02-09 22:03:28.429853738 +0300
+@@ -45,6 +45,7 @@
+ #include "libgcc_tm.h"
+ #include "gcov.h"
+ 
++#undef HAVE_SYS_MMAN_H
+ #if HAVE_SYS_MMAN_H
+ #include <sys/mman.h>
+ #endif
